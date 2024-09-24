@@ -1,4 +1,4 @@
-//WAP to find largest among 3 using turnary operators
+//WAP to find largest among 2 using turnary operators
 
 #include <stdio.h>
 
