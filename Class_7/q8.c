@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {int i,j;
-for(i=5;i>=1;i--)
+for(i='A';i<='E';i++)
 {
- for(j=1;j<=i;j++)  
+ for(j='A';j<=i;j++)  
  {
-  printf("%d",j);
+  printf("%c",j);
  }
 printf("\n");
 }
@@ -14,9 +14,9 @@ return 0;
 
 //Output
 /*
-12345
-1234
-123
-12
-1
+A
+AB
+ABC
+ABCD
+ABCDE
 */
