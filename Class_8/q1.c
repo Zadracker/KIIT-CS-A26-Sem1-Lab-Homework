@@ -6,7 +6,7 @@ int main(){
 float x=2.1,c=1,b;
 int n,f,d;
 printf("Enter n: ");
-scand("%d",&n);
+scanf("%d",&n);
 if (n<=0){
     printf("Invalid");
 } else {
@@ -30,3 +30,9 @@ if (n<=0){
 }
 printf("%f",c);
 return 0;}
+
+//Output
+/*
+Enter n: 3
+-1.940000
+*/
