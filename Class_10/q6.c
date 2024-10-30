@@ -16,7 +16,7 @@ for(j=0;j<3;j++){
 printf("\nNormal\n");
 for(i=0;i<3;i++){
 for(j=0;j<3;j++){
-    printf("%d\t",b[i][j]);
+    printf("%d\t",a[i][j]);
 }
 printf("\n");
 }
@@ -43,9 +43,9 @@ Enter element for a[3x3]: 9
 
 
 Normal
-1       4       7
-2       5       8
-3       6       9
+1       2       3
+4       5       6
+7       8       9
 
 Transpose
 1       4       7
