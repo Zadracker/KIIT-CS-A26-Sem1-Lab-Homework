@@ -1,4 +1,4 @@
-//Define and display 3x4 Matrix
+//Define and display 4x3 Matrix
 
 #include <stdio.h>
 int main(){
