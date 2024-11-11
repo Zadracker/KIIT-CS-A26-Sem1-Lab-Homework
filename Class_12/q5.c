@@ -12,14 +12,14 @@ int findSmallest(int arr[], int size) {
 }
 int main() {
     int size;
-    printf("Enter the size of the array: ");
+    printf("Size of array: ");
     scanf("%d", &size);
     int arr[size];
-    printf("Enter %d elements of the array:\n", size);
+    printf("Enter %d elements:\n", size);
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
     int smallest = findSmallest(arr, size);
-    printf("The smallest element in the array is: %d\n", smallest);
+    printf("Smallest element: %d\n", smallest);
     return 0;
 }
