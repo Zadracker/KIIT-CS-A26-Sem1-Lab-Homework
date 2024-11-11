@@ -23,3 +23,15 @@ int main() {
     printf("Smallest element: %d\n", smallest);
     return 0;
 }
+
+//Output
+/*
+Size of array: 5
+Enter 5 elements:
+05
+-5
+55
+-55
+32
+Smallest element: -55
+*/

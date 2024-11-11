@@ -20,3 +20,9 @@ int main() {
     printf("\n");
     return 0;
 }
+
+//Output
+/*
+Number of terms: 5
+Fibonacci Series: 0 1 1 2 3
+*/

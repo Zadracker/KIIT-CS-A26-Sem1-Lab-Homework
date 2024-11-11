@@ -14,3 +14,10 @@ int main() {
     printf("Sum of digits of %d is %d\n", num, sumOfDigits(num));
     return 0;
 }
+
+
+//Output
+/*
+Enter a number: 291
+Sum of digits of 291 is 12
+*/

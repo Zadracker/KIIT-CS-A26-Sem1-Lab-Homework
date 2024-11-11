@@ -21,3 +21,14 @@ int main() {
     printf("Sum of all elements: %d\n", totalSum);
     return 0;
 }
+//Output
+/*
+Size of the array: 5
+Enter 5 elements:
+-99
+99
+121
+7 
+0
+Sum of all elements: 128
+*/

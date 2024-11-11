@@ -18,3 +18,9 @@ int main() {
     }
     return 0;
 }
+
+//Output
+/*
+Enter a number: 5
+Factorial of 5 is 120
+*/

@@ -53,3 +53,28 @@ int main() {
         printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%c\n", roll_nos[i], marks[i][0], marks[i][1], marks[i][2], marks[i][3], total_marks[i], grades[i]);
     }
     return 0;}
+
+//Output
+/*
+Enter the number of students: 2
+
+Enter details for student 1:
+Roll No.: 894
+Enter marks for subject 1: 40
+Enter marks for subject 2: 30
+Enter marks for subject 3: 90
+Enter marks for subject 4: 86 
+
+Enter details for student 2:
+Roll No.: 895
+Enter marks for subject 1: 213
+Please enter marks between 0 and 100: 21
+Enter marks for subject 2: 80
+Enter marks for subject 3: 90
+Enter marks for subject 4: 100
+
+Roll No.        Subject 1       Subject 2       Subject 3       Subject 4       Total Marks     Grade
+----------------------------------------------------------------------------------------------------
+894             40              30              90              86              246             B
+895             21              80              90              100             291             A
+*/
