@@ -1,4 +1,4 @@
-//Student Data using Structures
+//Student Structure
 
 #include <stdio.h>
 void printLine(char ch, int times) {
@@ -7,31 +7,35 @@ void printLine(char ch, int times) {
     }
     putchar('\n');
 }
+
 struct Student {
     int roll_no;
     int marks[4];  
     int total_marks;
+    int avg;
     char grade;
 };
+
 void calculateResults(struct Student* student) {
     student->total_marks = 0;
     for (int i = 0; i < 4; i++) {
         student->total_marks += student->marks[i];
     }
-    int average = student->total_marks / 4;
+    student->avg = student->total_marks / 4;  // Calculate average marks
 
-    if (average >= 90) {
-        student->grade = 'O';  
-    } else if (average >= 80) {
-        student->grade = 'E'; 
-    } else if (average >= 70) {
-        student->grade = 'A'; 
-    } else if (average >= 60) {
-        student->grade = 'B'; 
-    } else if (average >= 50) {
-        student->grade = 'C';  
+    // Assign grade based on average
+    if (student->avg >= 90) {
+        student->grade = 'O';  // Outstanding
+    } else if (student->avg >= 80) {
+        student->grade = 'E';  // Excellent
+    } else if (student->avg >= 70) {
+        student->grade = 'A';  // Very Good
+    } else if (student->avg >= 60) {
+        student->grade = 'B';  // Good
+    } else if (student->avg >= 50) {
+        student->grade = 'C';  // Average
     } else {
-        student->grade = 'D'; 
+        student->grade = 'D';  // Below Average
     }
 }
 
@@ -42,6 +46,7 @@ int main() {
 
     struct Student students[num_students];
 
+    // Input student details
     for (int i = 0; i < num_students; i++) {
         printf("\nEnter details for student %d:\n", i + 1);
 
@@ -57,19 +62,15 @@ int main() {
                 }
             } while (students[i].marks[j] < 0 || students[i].marks[j] > 100);
         }
-
         calculateResults(&students[i]);
     }
-
-    printf("\nRoll No.\tSubject 1\tSubject 2\tSubject 3\tSubject 4\tTotal Marks\tGrade\n");
+    printf("\nRoll No.\tSubject 1\tSubject 2\tSubject 3\tSubject 4\tTotal Marks\tAverage\tGrade\n");
     printLine('-', 100);
-
     for (int i = 0; i < num_students; i++) {
-        printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%c\n",
+        printf("%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%c\n",
                students[i].roll_no, students[i].marks[0], students[i].marks[1],
                students[i].marks[2], students[i].marks[3], students[i].total_marks,
-               students[i].grade);
+               students[i].avg, students[i].grade);
     }
-
     return 0;
 }
