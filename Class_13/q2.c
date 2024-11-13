@@ -35,3 +35,5 @@ for (int i = 0; i < 5; i++) {
     printf("%d\t%s\t%d\n", emp[i].id, emp[i].name, emp[i].age);
 }
 return 0;}
+
+//Output
