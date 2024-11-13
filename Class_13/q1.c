@@ -31,3 +31,16 @@ int main() {
     printf("%d\t%s\t%d\n", emp.id, emp.name, emp.age);
     return 0;
 }
+
+//Output
+/*
+Enter Employee Name: Zayyan
+Enter Employee ID: 895
+Enter Employee Age: 18
+
+Employee Information:
+
+ID	Name	Age
+--------------------
+895	Zayyan	18
+*/
